@@ -18,6 +18,8 @@ $employeeData = null;
 // Check if form data has been submitted
 if ($_POST) {
     $input = $_POST['search'];
+    // Remove dots and dashes from input
+    $input = str_replace(['.', '-'], '', $input);
     // Validate input as CPF or email
     if (filter_var($input, FILTER_VALIDATE_EMAIL)) {
         $stmt = $employee->readByEmail($input);
