@@ -69,7 +69,9 @@ class Employee
 
     // Method to update an existing employee's details
     public function update($id, $name, $birthdate, $cpf, $email, $marital_status)
-    {
+    { 
+        // Sanitize and validate CPF
+        $cpf = preg_replace('/[^0-9]/', '', $cpf); // Remove non-numeric characters from CPF
         if (!isValidCPF($cpf)) { // Validate CPF format
             return "Invalid CPF.";
         }
