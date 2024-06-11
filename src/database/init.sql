@@ -17,16 +17,21 @@ CREATE TABLE IF NOT EXISTS employees (
 
 -- Inserting a man employee
 INSERT INTO employees (name, birthdate, cpf, email, marital_status) 
-VALUES ('Leonardo Borges', '1990-05-10', '12345678901', 'leonardo.borges@example.com', 'SINGLE');
+VALUES ('Leonardo Borges', '1990-05-10', '24859785738', 'leonardo.borges@example.com', 'SINGLE');
 
 -- Inserting a woman employee
 INSERT INTO employees (name, birthdate, cpf, email, marital_status) 
-VALUES ('Bruna Silva', '1992-03-25', '98765432109', 'bruna.silva@example.com', 'MARRIED');
+VALUES ('Bruna Silva', '1992-03-25', '26396088940', 'bruna.silva@example.com', 'MARRIED');
 
 -- Inserting a man employee
 INSERT INTO employees (name, birthdate, cpf, email, marital_status) 
-VALUES ('Theodoro Borges', '1982-08-12', '11122233344', 'theodoro.borges@example.com', 'DIVORCED');
+VALUES ('Theodoro Borges', '1982-08-12', '55931523812', 'theodoro.borges@example.com', 'DIVORCED');
 
 -- Inserting a woman employee
 INSERT INTO employees (name, birthdate, cpf, email, marital_status) 
-VALUES ('Ana Puentes', '1990-01-05', '44455566677', 'ana.puentes@example.com', 'WIDOWED');
+VALUES ('Ana Puentes', '1990-01-05', '47312211968', 'ana.puentes@example.com', 'WIDOWED');
+
+-- Inserting a woman employee
+INSERT INTO employees (name, birthdate, cpf, email, marital_status) 
+VALUES ('Fernanda tadiotto', '1986-03-25', '73123327655', 'fernanda.tadiotto@example.com', 'MARRIED');
+
