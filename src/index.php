@@ -62,6 +62,7 @@ $num = $stmt->rowCount(); // Get the number of rows returned
                     <table>
                         <thead>
                             <tr>
+                                <th>Id</th>
                                 <th>Name</th>
                                 <th>Birthdate</th>
                                 <th>CPF</th>
@@ -74,6 +75,7 @@ $num = $stmt->rowCount(); // Get the number of rows returned
                             <!-- Loop through each employee data row -->
                             <?php while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) : ?>
                                 <tr data-id="<?php echo $row['id']; ?>">
+                                    <td data-label="id"><?php echo htmlspecialchars($row['id']); ?></td>
                                     <td data-label="Name"><?php echo htmlspecialchars(strtoupper($row['name'])); ?></td>
                                     <td data-label="Birthdate"><?php
                                                                 $birthdate = date_create_from_format('Y-m-d', $row['birthdate']);
